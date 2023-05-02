@@ -34,7 +34,7 @@ for (station of stations){
     stationCount += 1;
 }
 
-console.log("There are " + stationCount + " stations.");
+// console.log("There are " + stationCount + " stations.");
 
 
 
@@ -43,9 +43,9 @@ console.log("There are " + stationCount + " stations.");
  * Which station is the third stop?
  */
 
-thirdStation = null;
+thirdStation = stations[2];
 
-// console.log("The third station is " + thirdStation);
+console.log("The third station is " + thirdStation);
 
 
 
@@ -53,6 +53,7 @@ thirdStation = null;
  * Q5.
  * Someone put the wrong Berwick on the timetable! Update "North Berwick" to "Berwick-upon-Tweed".
  */
+
 
 // console.log(stations);
 
