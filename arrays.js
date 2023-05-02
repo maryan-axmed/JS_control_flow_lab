@@ -20,7 +20,7 @@ stations.push("London Kings Cross");
  */
 
 stations.shift();
-console.log(stations);
+// console.log(stations);
 
 
 
@@ -30,8 +30,11 @@ console.log(stations);
  */
 
 stationCount = null;
+for (station of stations){
+    stationCount += 1;
+}
 
-// console.log("There are " + stationCount + " stations.");
+console.log("There are " + stationCount + " stations.");
 
 
 
