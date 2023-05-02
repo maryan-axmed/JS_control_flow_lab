@@ -45,7 +45,7 @@ for (station of stations){
 
 thirdStation = stations[2];
 
-console.log("The third station is " + thirdStation);
+// console.log("The third station is " + thirdStation);
 
 
 
@@ -53,9 +53,13 @@ console.log("The third station is " + thirdStation);
  * Q5.
  * Someone put the wrong Berwick on the timetable! Update "North Berwick" to "Berwick-upon-Tweed".
  */
+for(i = 0; i < stations.length; i++){
+    if(stations[i] === "North Berwick"){
+        stations[i] = "Berwick-upon-Tweed";
+    }
+}
 
-
-// console.log(stations);
+console.log(stations);
 
 
 
@@ -63,7 +67,7 @@ console.log("The third station is " + thirdStation);
  * Q6.
  * How did Leeds get on there? Better remove it.
  */
-
+// stations.pop("Leeds");
 // console.log(stations);
 
 
