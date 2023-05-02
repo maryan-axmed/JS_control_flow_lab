@@ -77,12 +77,12 @@ stations.splice(stations.indexOf('Leeds'), 1);
  * Q7.
  * We forgot about Darlington! Add it to the route between Newcastle and York.
  */
-for(i = 0; i <stations.length; i++){
-    if(stations[i] === "Newcastle" && stations[i + 1] === "York"){
-        stations.splice(2, 0, "Darlington");
+for(i = 0; i < stations.length; i++){
+    if(stations[i] === "Newcastle"){
+        stations.splice(i + 1, 0, "Darlington");
     }
 }
-console.log(stations);
+// console.log(stations);
 
 
 
@@ -92,11 +92,18 @@ console.log(stations);
  */
 
 stoppingAtDurham = null;
-
-// console.log(stoppingAtDurham);
+for(station of stations){
+    if(station === "Durham"){
+        stoppingAtDurham = true;
+    } else {
+        stoppingAtDurham = false;
+    }
+}
+console.log(stoppingAtDurham);
 
 
 /**
  * Q9.
  * If we are stopping at Durham, print "Yay Durham!" to the terminal. If not print "Aww...".
  */
+
