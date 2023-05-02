@@ -59,7 +59,7 @@ for(i = 0; i < stations.length; i++){
     }
 }
 
-console.log(stations);
+// console.log(stations);
 
 
 
@@ -67,8 +67,12 @@ console.log(stations);
  * Q6.
  * How did Leeds get on there? Better remove it.
  */
-// stations.pop("Leeds");
-// console.log(stations);
+// for(i = 0; i <stations.length; i++){
+//     if(stations[i] === "Leeds"){
+        stations.splice(stations.indexOf('Leeds'), 1);
+//     }
+// }
+console.log(stations);
 
 
 
