@@ -67,3 +67,4 @@ for (i = 0; i < unitedKingdom.length; i++){
     console.log(`Scotland has a larger population that ${unitedKingdom[i].name}`);
   }
 }
+//  this answer needs a single print and so the soloution is an if statement only.
